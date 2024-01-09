@@ -13,7 +13,7 @@ const SpeakersAndHosts = () => {
         </h3>
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
           {hosts.map((host) => (
-            <Presenter presenter={host} />
+            <Presenter key={host.name} presenter={host} />
           ))}
         </div>
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold  mt-12 mb-8">
@@ -21,7 +21,7 @@ const SpeakersAndHosts = () => {
         </h3>
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
           {speakers.map((speaker) => (
-            <Presenter presenter={speaker} />
+            <Presenter key={speaker.name} presenter={speaker} />
           ))}
         </div>
       </div>

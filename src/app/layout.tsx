@@ -7,9 +7,14 @@ import { siteMetadata } from "@/constants/siteMetaData";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteMetadata.siteUrl),
   title: siteMetadata.title,
   description: siteMetadata.description,
   keywords: siteMetadata.keywords,
+  alternates: {
+    canonical: siteMetadata.siteUrl,
+  },
+  publisher: siteMetadata.publisher,
   robots: {
     index: false,
     follow: true,

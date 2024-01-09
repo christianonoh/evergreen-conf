@@ -11,9 +11,8 @@ import Button from "../shared/Button";
 import Hamburger from "../shared/Hamburger";
 import { BsFacebook, BsTwitterX } from "react-icons/bs";
 
-const index = () => {
+const Header = () => {
   const [toggled, setToggled] = useState(false);
-  const pathname = usePathname();
   const [isSticky, setSticky] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
@@ -111,4 +110,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Header;

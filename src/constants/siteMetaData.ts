@@ -35,7 +35,6 @@ const keywordsArray = [
 ];
 
 export const siteMetadata = {
-  metadataBase: new URL(siteUrl),
   title: "SouthEast Educator's Conference",
   headerTitle: "SouthEast Educator's Conference",
   description:
@@ -43,6 +42,7 @@ export const siteMetadata = {
   language: "en-us",
   theme: "system",
   siteUrl: siteUrl,
+  publisher: "Educare",
   eventStartDate: "2024-04-18T08:30:00+01:00",
   eventEndDate: "2024-04-17T15:30:00+01:00",
   eventVenue: "The Base Event Center",
