@@ -14,6 +14,7 @@ const Presenter = ({ presenter }: { presenter: PresenterType }) => {
         <Image
           src={presenter.image}
           alt={presenter.name}
+          placeholder="blur"
           className="w-full rounded-t-xl object-cover hover:scale-95 transition-all duration-500 ease-in-out "
           fill
           sizes="max-width(767px) 100vw, 400px"
