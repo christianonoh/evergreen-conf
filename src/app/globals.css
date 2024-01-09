@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.height__screen {
+  height: 100vh;
+  height: 100svh;
+}
+
+.hero__header {
+  background-image: url("../../public/graduation.webp");
+  background-position: center;
+  text-transform: uppercase;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: rgba(30, 71, 17, 0.6);
+}
+
+.tool {
+  color: #1e4711;
+}
+
+.preview__program {
+  @apply max-h-[400px] overflow-clip;
+}
+
+.fade-left {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    transparent 100%
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 25%;
+}
+
+.fade-right {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    transparent 100%
+  );
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  height: 100%;
+  width: 25%;
+}
+
+@media (min-width: 1024px) {
+  #hero__section {
+    background-image: url("../../public/pattern.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
+
+select:before {
+  /*pointer-events: none;*/
+  content: "\f0d7";
+  font-size: 2em;
+  font-family: "FontAwesome";
+  line-height: 12px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
