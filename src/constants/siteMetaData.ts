@@ -1,4 +1,4 @@
-const remoteUrl = `https://ngworocks.com`;
+const remoteUrl = `https://seec-theta.vercel.app`;
 const localUrl = `http://localhost:3000`;
 const isDevelopment = process.env.NODE_ENV === "development";
 const siteUrl = isDevelopment ? localUrl : remoteUrl;
