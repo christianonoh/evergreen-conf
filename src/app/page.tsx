@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col text-dark text-lg">
+    <main className="flex min-h-screen !overflow-x-clip flex-col text-dark text-lg">
       <Hero />
       <EventProgram />
       <SpeakersAndHosts />
