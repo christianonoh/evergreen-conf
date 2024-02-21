@@ -17,7 +17,7 @@ html {
   text-transform: uppercase;
   background-size: cover;
   -webkit-background-clip: text;
-  color: rgba(30, 71, 17, 0.6);
+  color: rgba(30, 71, 17, 0.8);
 }
 
 .tool {

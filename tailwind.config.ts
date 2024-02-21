@@ -12,9 +12,10 @@ const config: Config = {
       colors: {
         dark: "rgb(39 39 42)",
         light: "rgb(250 250 250)",
-        bgLight: "#FDFBE5",
+        bgLight: "rgb(250 250 250)",
+        // bgLight: "#FDFBE5",
         oldaccent: "rgb(30 71 17)",
-        accent: "rgb(70 198 74)",
+        accent: "#36af3a",
         winered: "#8E2028",
         warning: "#DE0C18",
       },
