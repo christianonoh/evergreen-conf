@@ -14,24 +14,34 @@ const Hero = () => {
         <p className="mb-4 text-lg text-accent font-semibold">
           South East Educators Conference presents
         </p>
-        <h1 className="hero__header text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold max-w-4xl">
-          Educating for Impact and Transformation
-        </h1>
-        <p className="border-4 border-accent text-base sm:text-xl max-w-3xl p-2 sm:p-4 mt-4">
-          Get ready for an awesome time at the South East Educators Conference
-          2024! Discover cool stuff about teaching and learning through talks,
-          workshops, and a keynote on the future of education. Meet new people,
-          share ideas, and have a blast at this educational adventure!
-        </p>
-        <span className="font-bold text-2xl items-center flex gap-2 mt-4 md:mt-8 text-accent">
-          <BsCalendarDateFill arial-label="Conference date icon" />
+        <div className="hero__header text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold max-w-4xl">
+          <h1>FUTURE-FOCUSED LEARNING: </h1>
+          <p className="font-normal mt-2">IGNITING THE COMPETITIVE EDGE</p>
+        </div>
+        <div className="max-w-3xl p-2 sm:p-4 mt-4 relative border-2 border-accent">
+          <p className="absolute left-0 top-0 bg-accent text-light text-sm px-2 py-0.5">
+            Our Vision
+          </p>
+          <p className=" text-base sm:text-xl mt-4">
+            To create a dynamic platform that equips educators with the tools
+            and knowledge needed to make a lasting impact on the educational
+            landscape of South-Eastern Nigeria.
+          </p>
+        </div>
+
+        <span className="font-bold text-2xl items-center flex gap-2 mt-4 md:mt-8">
+          <span className="bg-accent text-light p-2 rounded-full text-base">
+            <BsCalendarDateFill arial-label="Conference date icon" />
+          </span>
           <span className="text-xl italic text-dark">
             <time dateTime="2024-04-18">18th</time>&nbsp;and&nbsp;
             <time dateTime="2024-04-18">19th</time>&nbsp;April, 2024.
           </span>
         </span>
-        <span className="text-2xl items-center flex gap-2 mt-4 text-accent">
-          <FaLocationDot arial-label="Conference venue icon" />
+        <span className="text-2xl items-center flex gap-2 mt-4">
+          <span className="bg-accent text-light p-2 rounded-full text-base">
+            <FaLocationDot arial-label="Conference venue icon" />
+          </span>
           <address className="font-bold text-xl text-dark">
             <a
               href="https://maps.app.goo.gl/NWWkJyfe4JFpWpgXA"
