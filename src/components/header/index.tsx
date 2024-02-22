@@ -3,13 +3,12 @@
 import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "/public/logo.png";
+import Logo from "/public/logo.webp";
 import { cx } from "@/utils";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import Button from "../shared/Button";
 import Hamburger from "../shared/Hamburger";
-import { BsFacebook, BsTwitterX } from "react-icons/bs";
+import Socials from "../shared/Socials";
 
 const Header = () => {
   const [toggled, setToggled] = useState(false);
@@ -66,6 +65,7 @@ const Header = () => {
               {link.title}
             </Link>
           ))}
+          <Socials />
         </div>
 
         {/* Mobile Navigation  */}
@@ -99,10 +99,13 @@ const Header = () => {
                 />
               </span>
             </span>
-            <span className="flex gap-8 items-center mt-12 mx-auto">
-              <BsFacebook />
-              <BsTwitterX />
-            </span>
+            {/* Socials */}
+            <div className="flex flex-col items-center text-light  mt-12">
+              <h4 className="mb-4 text-center text-sm xs:text-base">
+                Follow our socials:
+              </h4>
+              <Socials />
+            </div>
           </div>
         </span>
       </nav>
