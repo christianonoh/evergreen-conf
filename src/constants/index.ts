@@ -1,9 +1,8 @@
-import EvergreenLogo from "/public/hosts/host-01.png";
+import EvergreenLogo from "/public/hosts/evergreen-foundation-logo.jpeg";
 import EnuguMinstryLogo from "/public/hosts/host-02.png";
-import Peter_Mba from "/public/speakers/Peter_Mba.jpg";
 import ProfileP from "/public/speakers/profile.jpg";
 import Njorteah from "/public/speakers/Njorteah.jpeg";
-import Adewuiyi from "/public/speakers/Adewuiyi.webp";
+import Adewuiyi from "/public/speakers/bukola-adewuiyi.webp";
 import Isa from "/public/speakers/joy-isa.webp";
 import Osita from "/public/speakers/Osita.jpeg";
 import Verdegem from "/public/speakers/Verdegem.jpg";
@@ -14,12 +13,12 @@ import Eyitayo from "/public/speakers/rotimi-eyitayo.webp";
 import Odigboh from "/public/speakers/rhoda-odigboh.webp";
 import Ofobuike from "/public/speakers/chibueze-ofobuike.webp";
 import Ogundere from "/public/speakers/abimbola-ogundere.webp";
+import Israel from "/public/speakers/israel.webp";
 
 export const navLinks = [
   { path: "/#about", title: "About" },
   { path: "/#program", title: "Program" },
   { path: "/#speakers", title: "Speakers" },
-  { path: "/#partners", title: "Partners" },
 ];
 
 export type EventDetails = {
@@ -223,7 +222,7 @@ export const eventProgram: EventProgram = [
 
 export const hosts = [
   {
-    name: "Evergreen Consult",
+    name: "Evergreen Foundation Initiative",
     image: EvergreenLogo,
   },
   {
@@ -259,6 +258,14 @@ export const speakers = [
     name: "Mrs. Bukola Adewuiyi",
     title: "CEO Supreme education foundation",
     image: Adewuiyi,
+    bio: `
+    <p>Olubukola Ola Adewuyi is a preeminent figure in Africa's education sector, renowned for her extensive experience and dynamic approach in school management, leadership transformation, and team formation.</p>
+    <p>Her journey in the world of education began at Middlesex University London, with a remarkable feat by distinguishing herself as an Ofsted Outstanding teacher in the United Kingdom before transitioning to head the Lekki British School in Nigeria.</p>
+    <p>As the CEO of Supreme Education Foundation School, Mrs. Adewuyi embodies the qualities of a visionary entrepreneur, with work ethics marked by dedication, selflessness, and professionalism. Recognized by The Guardian Newspaper as one of the value-driven CEOs of Excellence that powered Nigeria's growth in 2022 and commended by Business Day as a notable woman in business.</p>
+    <p>Bukola Adewuyi has made substantial contributions to the Nigerian educational landscape. Her roles as Chairman of the ACCA Advisory Committee and head of the Quality Assurance arm of APEN (Association of Private Educators of Nigeria) highlight her multifaceted influence in the sector.</p>
+    <p>Her professional affiliations, including the GTCE, NBA, APEN, and the Institute of Family Life System Engineering, complement her background as a lawyer and family life system coach.</p>
+    <p>Bukola Adewuyi's unique philosophy, rooted in creativity, resourcefulness, and relentless hard work, elevates her as an exceptional strategist, trainer, consultant, and childcare expert, solidifying her status as a preeminent, transformative leader in education. She plays a pivotal role in the drive for school transformation in the education sector within Nigeria and across West Africa.</p>
+  `,
   },
   {
     name: "Dr. Verdegem",
@@ -324,9 +331,16 @@ export const speakers = [
     image: Ogundere,
   },
   {
-    name: "Barr. Doris Chinedu Okoro",
-    title: "CEO Evergreen Group Of Schools",
-    image: Okoro,
+    name: "Odetola Ebenezer Israel",
+    title: "Teacher of creativity and practice",
+    image: Israel,
+    bio: `
+    <p>Odetola Ebenezer Israel is a multi-talented and innovative education professional with a background in creative art teaching, school consulting, school decorating, training, coaching, and technology resources. He is the founder of Ebencut, Creative Mind Educo, and CME Foundation, three companies that are dedicated to improving education and empowering students and teachers to reach their full potential.</p>
+    <p>With CME Foundation, Odetola has created a continuous WhatsApp platform for teacher professional development, with over 50,000 teachers on WhatsApp groups. The platform offers a range of resources, including webinars, workshops, and online courses, that can be accessed at any time and from any location, making it a convenient and flexible way for teachers to learn and grow.</p>
+    <p>With over a decade of experience in the field, Odetola brings a wealth of knowledge and expertise to his work. As an art teacher, he is skilled in a range of media and art across the curriculum and is known for his engaging and interactive teaching style. As a school consultant and learning environment therapist, he is adept at creating visually appealing and inspiring learning environments that support student learning and development. And as a trainer and coach, he helps educators and school staff to develop their own creative and technological skills and incorporate them into their practice.</p>
+    <p>In addition to his professional work, Odetola is active in the education community, frequently participating in conferences and workshops to continue learning and growing as a teacher and consultant. He is also a strong advocate for the power of creativity and technology in education and is always seeking out new ways to bring these concepts into his work with schools.</p>
+    <p>Overall, Odetola Ebenezer Israel is a dedicated and experienced education professional who is committed to improving education and empowering students and teachers to reach their full potential through his work with Ebencut, Creative Mind Educo, and CME Foundation.</p>
+  `,
   },
 ];
 
