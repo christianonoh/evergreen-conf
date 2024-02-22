@@ -8,7 +8,7 @@ type PresenterType = {
   name: string;
   image: any;
   title?: string;
-  bio: string;
+  bio?: string;
   tag?: string;
 };
 
@@ -52,16 +52,15 @@ const Presenter = ({ presenter }: { presenter: PresenterType }) => {
         </div>
       </div>
       {showBio && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 h-screen w-full">
-          <div className="bg-white relative max-w-xl rounded-lg p-6 shadow transition-all m-5">
+        <div className="fixed speaker_bio inset-0 z-50 flex items-center justify-center bg-black/30 h-screen w-full">
+          <div className="bg-white relative max-w-xl rounded-lg shadow transition-all m-5 py-8 min-w-[270px]">
             <button
               onClick={handleClick}
               className="absolute top-2 right-2 text-3xl"
             >
               <IoIosCloseCircleOutline />
             </button>
-            <div className="max-h-[70vh] overflow-scroll">
-              {/* <div className="absolute -top-12 right-1/2 translate-x-1/2"> */}
+            <div className="max-h-[70vh] overflow-y-auto p-6">
               <div className="relative mx-auto flex items-center overflow-clip w-24 h-24 rounded-full border-2 border-white">
                 <Image
                   src={presenter.image}
@@ -72,7 +71,6 @@ const Presenter = ({ presenter }: { presenter: PresenterType }) => {
                   sizes="max-width(767px) 100vw, 400px"
                 />
               </div>
-              {/* </div> */}
               <h3 className="text-2xl font-semibold mt-4 text-center">
                 {presenter.name}
               </h3>
@@ -81,7 +79,7 @@ const Presenter = ({ presenter }: { presenter: PresenterType }) => {
                   {presenter.title}
                 </h4>
               )}
-              {presenter.bio && (
+              {presenter?.bio && (
                 <div
                   className="prose mt-2"
                   dangerouslySetInnerHTML={{ __html: presenter.bio }}
