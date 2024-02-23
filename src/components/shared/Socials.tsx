@@ -1,4 +1,5 @@
 import { siteMetadata } from "@/constants/siteMetaData";
+import { cx } from "@/utils";
 import React from "react";
 import { BsTwitterX } from "react-icons/bs";
 import {
@@ -8,9 +9,14 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
-const Socials = () => {
+const Socials = ({ className }: { className?: string }) => {
   return (
-    <div className="flex gap-8 md:gap-3 items-center mx-auto text-xl xs:text-2xl md:text-lg md:bg-accent/10 md:py-0.5 md:px-2 rounded-full">
+    <div
+      className={cx(
+        "flex gap-8 md:gap-3 items-center mx-auto text-xl xs:text-2xl md:text-lg md:bg-accent/10 md:py-0.5 md:px-4 rounded-full",
+        className
+      )}
+    >
       {siteMetadata.socials?.facebook && (
         <a
           aria-label="NgwoRocks facebook profile link"

@@ -55,7 +55,7 @@ const Header = () => {
         <Link href="/" className="h-14 w-fit">
           <Image src={Logo} alt="logo" className="h-full w-auto" priority />
         </Link>
-        <div className="md:flex gap-4 hidden">
+        <div className="md:flex gap-3 hidden">
           {navLinks.map((link, index) => (
             <Link
               href={link.path}
