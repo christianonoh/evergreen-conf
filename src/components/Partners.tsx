@@ -9,7 +9,7 @@ const Partners = () => {
   return (
     <section
       id="partners"
-      className="mx-auto w-full max-w-7xl px-5 py-24 sm:px-10"
+      className="mx-auto w-full max-w-7xl px-5 py-36 sm:px-10"
     >
       <div>
         <h2 className="mb-8 text-3xl md:text-4xl text-center font-semibold  text-dark md:mb-12 lg:text-5xl">

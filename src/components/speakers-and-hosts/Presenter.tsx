@@ -22,7 +22,7 @@ const Presenter = ({ presenter }: { presenter: PresenterType }) => {
   return (
     <>
       <div
-        className="w-full border overflow-clip rounded-xl bg-[#b0b0b0]/25 hover:bg-[#1E4611] hover:text-light"
+        className="w-full border border-[#f2f2f2] overflow-clip rounded-xl bg-light shadow-sm hover:bg-[#054128] hover:text-light"
         onClick={handleClick}
       >
         <div className="relative flex overflow-clip pt-[80%]">
