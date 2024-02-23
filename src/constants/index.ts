@@ -14,6 +14,13 @@ import Odigboh from "/public/speakers/rhoda-odigboh.webp";
 import Ofobuike from "/public/speakers/chibueze-ofobuike.webp";
 import Ogundere from "/public/speakers/abimbola-ogundere.webp";
 import Israel from "/public/speakers/israel.webp";
+import Angelina from "/public/speakers/angelina.webp";
+import {
+  InnovationIcon,
+  MentorIcon,
+  NetworkIcon,
+  PartnershipIcon,
+} from "@/components/icons";
 
 export const navLinks = [
   { path: "/#about", title: "About" },
@@ -331,6 +338,19 @@ export const speakers = [
     image: Ogundere,
   },
   {
+    name: "Angelina Ikeako FSET",
+    title: "Governor at Sydney Russell School London",
+    image: Angelina,
+    bio: `
+    <p>Angelina is one of the thought leaders in education internationally. She is a qualified teacher, and her extensive experience as an educator spans over two decades, covering teaching, student support, senior management, and senior leadership. She earned a Masters in Education Management from Roehampton University London and is currently a Ph.D. Researcher in Education at the same institution.</p>
+    <p>Angelina works in one borough in London as Deputy Head within School Improvement in the Education department for the council. Her portfolio is to champion education equality in supporting high achievement among the most vulnerable and high-risk children, working with 100 schools within and outside the borough. Her role involves delivering training and providing quality assurance to enable effective interventions for the most vulnerable children with a budget of £450,000 to ensure the attainment and progress of this cohort.</p>
+    <p>Her expertise has been acknowledged by the Department for Education London, as she was invited by the Department for Education in 2019 to provide expert advice on the new T-Levels. She is a Fellow with the Society for Education and Training UK. She was previously a teacher training lecturer and served as Mayoral Special Adviser on Education in Barking and Dagenham United Kingdom from 2018 to 2019.</p>
+    <p>Angelina is a qualified Assessor and has just completed a certification with distinction with the Chartered Management Institute and Coventry University in leadership and management. She has been invited to the House of Lords in the United Kingdom in relation to education initiatives for the most vulnerable to examine effective education and progression interventions. She was also part of the team invited to the House of Parliament to chart a new direction for further education in the United Kingdom.</p>
+    <p>She is a Governor at Sydney Russell School London. Her passion is to improve social capital and research skills of African students by providing opportunities to enhance their understanding of global citizenship. She does this through the Global Schools Connect and Award Programme, which partners schools in Africa with schools in the United Kingdom. She has worked with Lagos State Ministry of Education, training 450 of their school inspectors in 2019. She is currently working with Katsina State Basic Education led by the Honourable Commissioner for Education Katsina State.</p>
+    <p>Angelina has authored several professional development courses on training for teachers and school leaders. She has written 2 books: “Teach like an Expert” and “Secrets to Staff Retention”. She is the CEO of Golden Links Educational Consultants, Convener of the International School Leaders Conference London, and a distinguished international speaker and trainer.</p>
+  `,
+  },
+  {
     name: "Odetola Ebenezer Israel",
     title: "Teacher of creativity and practice",
     image: Israel,
@@ -366,5 +386,32 @@ export const partners = [
   {
     name: "Ministry of Education Enugu State",
     image: EnuguMinstryLogo,
+  },
+];
+
+export const whyAttend = [
+  {
+    title: "Unparalleled Networking",
+    description:
+      "Meet and connect with other educators, school owners, and industry professionals to foster collaborations and share best practices.",
+    icon: NetworkIcon,
+  },
+  {
+    title: "Insights from Visionary Leaders",
+    description:
+      "Gain insights from experienced educators and industry professionals, as they share their insights and experiences on driving educational innovation and transformation.",
+    icon: MentorIcon,
+  },
+  {
+    title: "Partnerships",
+    description:
+      "Proudly partner with key stakeholders in the educational sector, including Evergreen Consult and the Ministry of Education Enugu State, ensuring a rich and diverse learning experience.",
+    icon: PartnershipIcon,
+  },
+  {
+    title: "Innovative Learning Practices",
+    description:
+      "From holistic approaches to the integration of AI tools, SEEC'24 is dedicated to exploring practices that transcend traditional education boundaries",
+    icon: InnovationIcon,
   },
 ];
