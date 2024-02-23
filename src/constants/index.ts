@@ -415,3 +415,13 @@ export const whyAttend = [
     icon: InnovationIcon,
   },
 ];
+
+export const whoShouldAttend = [
+  "School Owners",
+  "Heads of Schools (Public and Private)",
+  "Educational Stakeholders",
+  "Counselors",
+  "Teachers",
+  "Parents",
+  "All Educators",
+];

@@ -1,4 +1,4 @@
-const remoteUrl = `https://seec-theta.vercel.app`;
+const remoteUrl = `https://southeasteducatorsconference.com/`;
 const localUrl = `http://localhost:3000`;
 const isDevelopment = process.env.NODE_ENV === "development";
 const siteUrl = isDevelopment ? localUrl : remoteUrl;
@@ -42,17 +42,24 @@ export const siteMetadata = {
   language: "en-us",
   theme: "system",
   siteUrl: siteUrl,
+  paymentLink: "https://pay.switchappgo.com/VvFASTh74YusP1sEbG",
+  socials: {
+    twitter: "https://twitter.com/SouthEastEduCon/",
+    facebook: "https://web.facebook.com/southeasteducatorsconferences/",
+    instagram: "https://www.instagram.com/southeasteducatorsconference/",
+    youtube: "https://www.youtube.com/@SouthEastEducatorsConference",
+    whatsapp: "https://api.whatsapp.com/send?phone=2349066694563",
+  },
   publisher: "Educare",
   eventStartDate: "2024-04-18T08:30:00+01:00",
   eventEndDate: "2024-04-17T15:30:00+01:00",
-  eventVenue: "The Base Event Center",
-  eventOrganizer: "Evergreen Consult",
+  eventVenue: "Nike Lake Resort, Enugu State",
+  eventOrganizer: "Evergreen Foundation Consult",
   eventOrganizerUrl: "https://evergreenschools.com.ng",
   keywords: keywordsArray,
   eventPaymentUrl: "FILL ME!!!!!",
   siteLogo: "/logo-bg.png",
   socialBanner: "/og.webp", // add social banner in the public folder
   email: "chibyk5000@gmail.com",
-  facebook: "https://web.facebook.com/NgwoROCK",
   locale: "en-US",
 };
