@@ -15,7 +15,7 @@ const config: Config = {
         bgLight: "rgb(250 250 250)",
         // bgLight: "#FDFBE5",
         green: "#14774b",
-        yellow: "#ffba00",
+        yellow: "#e6a700",
         accent: "#36af3a",
         winered: "#8E2028",
         warning: "#DE0C18",

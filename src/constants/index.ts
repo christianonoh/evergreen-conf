@@ -293,6 +293,13 @@ export const speakers = [
     name: "Alex Onyia ",
     title: "CEO, Educare",
     image: Onyia,
+    bio: `
+    <p>Alex Onyia is the CEO of Educare, the #1 leading education technology platform in Africa for K-12, serving more than 1 million students and 300 thousand parents.</p>
+    <p>Before that, Alex partnered with Facebook's Platform Partnerships team in Middle East and Africa, working with different content partners and developers in the region as part of Facebook's drive to make its platform more relevant in the day-to-day lives of people all over the world.</p>
+    <p>At Winexviv International Limited from 2015 to the present, Alex is the Head of Products leading developer programs in Sub-Saharan Africa. His mission is to grow the tech ecosystem in Sub-Saharan Africa and other emerging market regions through the use of Web and Mobile technology platforms as the "Growth Engine".</p>
+    <p>Before Winexviv, Alex worked as a software developer and later as a strategic business development manager in projects and initiatives that took him across Sub-Saharan Africa and the Indian Subcontinent. These projects and initiatives span the education and electronic payment verticals.</p>
+    <p>He is a graduate of Agricultural & Bio-resources Engineering from the University of Nigeria. He also holds a certificate as Certified Internet Webmaster.</p>
+  `,
   },
   {
     name: "Rotimi Eyitayo",

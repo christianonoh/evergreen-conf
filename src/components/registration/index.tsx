@@ -9,7 +9,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const index = () => {
   return (
-    <section className="relative -z-10" id="registration">
+    <section className="relative" id="registration">
       <CurvedPatternIcon
         fill="#fff"
         className="-rotate-180 absolute top-0 w-full"
@@ -43,17 +43,20 @@ const index = () => {
               </address>
             </span>
           </div>
-          <div className="rounded-3xl bg-white p-5 py-10 sm:p-10 max-w-2xl  w-full md:w-8/12 mx-auto">
+          <div className="rounded-3xl bg-white p-5 z-20 py-10 sm:p-10 max-w-2xl  w-full md:w-8/12 mx-auto">
             <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl mb-4 capitalize">
               Registration fee is <span className="text-yellow">N100,000</span>
               &nbsp; per participant.
             </h2>
             <p className="">
-              Covers{" "}
-              <b>conference materials, lunch, tea breaks & certificates.</b>{" "}
-              Secure your ticket now to join visionary speakers, insightful
-              workshops, and a community passionate about shaping the future of
-              impactful education.
+              <b className="text-warning">Important Notice: </b>Your payment
+              includes coverage for essential conference components, namely{" "}
+              <b> conference materials, lunch, tea breaks, and certificates.</b>{" "}
+              Please note that{" "}
+              <span className="text-warning font-semibold">
+                {" "}
+                accommodation is not included in this payment.
+              </span>
             </p>
             <Button
               href="https://pay.switchappgo.com/VvFASTh74YusP1sEbG"

@@ -27,7 +27,7 @@ const index = () => {
               target="_blank"
               title="http://www.educare.school"
             >
-              <span className="text-accent">EduCare</span>
+              <span className="text-accent">educare</span>
             </a>
           </p>
         </div>
