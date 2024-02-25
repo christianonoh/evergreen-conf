@@ -81,6 +81,9 @@ html {
   background-repeat: no-repeat;
 }
 
+.input__field {
+  @apply w-full border-2 border-light bg-light rounded text-dark py-1 sm:py-1 px-5 focus:outline-none focus:border-accent block appearance-none;
+}
 @media (min-width: 1024px) {
   /* #hero__section {
     background-image: url("../../public/pattern.png");
