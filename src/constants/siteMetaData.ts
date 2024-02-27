@@ -50,6 +50,12 @@ export const siteMetadata = {
     youtube: "https://www.youtube.com/@SouthEastEducatorsConference",
     whatsapp: "https://api.whatsapp.com/send?phone=2349066694563",
   },
+  phoneNumbers: [
+    "+2349066694563",
+    "+2349087504470",
+    "+2348033211862",
+    "+2348068782862",
+  ],
   publisher: "Educare",
   eventStartDate: "2024-04-18T08:30:00+01:00",
   eventEndDate: "2024-04-17T15:30:00+01:00",

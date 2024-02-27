@@ -1,5 +1,5 @@
 import EvergreenLogo from "/public/hosts/evergreen-foundation-logo.jpeg";
-import EnuguMinstryLogo from "/public/hosts/host-02.png";
+import Educare from "/public/hosts/host-02.webp";
 import ProfileP from "/public/speakers/profile.jpg";
 import Njorteah from "/public/speakers/Njorteah.jpeg";
 import Adewuiyi from "/public/speakers/bukola-adewuiyi.webp";
@@ -106,15 +106,10 @@ export const eventProgram: EventProgram = [
         details: "Time for lunch and networking.",
       },
       {
-        time: "1:40 PM – 2:10 PM",
-        event: "Breakout: AI Tools for Lesson Content by Ebenezer Odetola",
+        time: "1:40 PM – 2:40 PM",
+        event: "Breakout Sessions",
         details:
-          "Explore the use of AI tools for lesson content with Ebenezer Odetola.",
-      },
-      {
-        time: "2:10 PM – 2:40 PM",
-        event: "Breakout: Purpose-Driven Leadership by Rhoda",
-        details: "Rhoda discusses purpose-driven leadership.",
+          "<b>&#8226; </b> AI Tools for Lesson Content by Ebenezer Odetola. <br /> <b>&#8226; </b> Purpose-Driven Leadership by Rhoda Odigboh",
       },
       {
         time: "2:40 PM – 3:30 PM",
@@ -231,10 +226,12 @@ export const hosts = [
   {
     name: "Evergreen Foundation Initiative",
     image: EvergreenLogo,
+    tag: "Host",
   },
   {
-    name: "Ministry of Education Enugu State",
-    image: EnuguMinstryLogo,
+    name: "Educare",
+    image: Educare,
+    tag: "Partner",
   },
 ];
 
@@ -275,7 +272,7 @@ export const speakers = [
   `,
   },
   {
-    name: "Dr. Verdegem",
+    name: "Prof. Pieter Verdegem",
     title: "University of Westminser London",
     image: Verdegem,
   },
@@ -382,18 +379,28 @@ export const rolesOptions = [
   { label: "School Owner", value: "School Owner" },
   { label: "Student", value: "Student" },
   { label: "Teacher", value: "Teacher" },
-  { label: "Other (please specify)", value: "Other" },
+  { label: "Other", value: "Other" },
 ];
 
+export const workshopsOptions = [
+  {
+    label: "AI Tools for Lesson Content by Ebenezer Odetola",
+    value: "AI Tools for Lesson Content by Ebenezer Odetola",
+  },
+  {
+    label: "Purpose-Driven Leadership by Rhoda Odigboh",
+    value: "Purpose-Driven Leadership by Rhoda Odigboh",
+  },
+];
 export const partners = [
   {
     name: "Evergreen Consult",
     image: EvergreenLogo,
   },
-  {
-    name: "Ministry of Education Enugu State",
-    image: EnuguMinstryLogo,
-  },
+  // {
+  //   name: "Ministry of Education Enugu State",
+  //   image: EnuguMinstryLogo,
+  // },
 ];
 
 export const whyAttend = [
@@ -431,4 +438,20 @@ export const whoShouldAttend = [
   "Teachers",
   "Parents",
   "All Educators",
+];
+
+export const feeCovers = [
+  "Access to the conference",
+  "Conference Materials",
+  "Tea breaks",
+  "Lunch",
+  "Access to the Gala Night",
+];
+
+export const feeDoesNotCover = ["Accommodation", "Dinner", "Transportation"];
+
+export const thePlan = [
+  "Participants will have the opportunity to engage in two full days of conference sessions, diving deep into the future of Education.",
+  "There will be ample networking opportunities with school leaders from across the geopolitical zone and beyond.",
+  "The evening Gala Night promises a delightful atmosphere for dancing, dining, wining, and fostering deeper connections in a relaxed setting.",
 ];
