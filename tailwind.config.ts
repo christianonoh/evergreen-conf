@@ -18,7 +18,7 @@ const config: Config = {
         yellow: "#e6a700",
         accent: "#36af3a",
         winered: "#8E2028",
-        warning: "#DE0C18",
+        warning: "#ef4444",
       },
       animation: {
         marquee: "marquee 25s linear infinite",
