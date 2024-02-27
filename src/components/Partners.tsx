@@ -13,7 +13,7 @@ const Partners = () => {
     >
       <div>
         <h2 className="mb-8 text-3xl md:text-4xl text-center font-semibold  text-dark md:mb-12 lg:text-5xl">
-          Partners
+          Sponsors
         </h2>
         <div className="relative h-16 md:h-20 lg:h-24 overflow-x-clip !overflow-hidden">
           <div className="absolute bottom-2 top-2 flex items-center animate-marquee gap-8 md:gap-16 pr-8">
