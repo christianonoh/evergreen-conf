@@ -38,7 +38,7 @@ const ProgramDetails = ({ event }: any) => {
         </div>
         {isOpen && event.details && (
           <p className="event-description pt-4  text-gray-500 text-sm sm:text-base">
-            {event.details}
+            <div dangerouslySetInnerHTML={{ __html: event.details }}></div>
           </p>
         )}
       </div>

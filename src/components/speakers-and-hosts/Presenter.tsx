@@ -1,8 +1,11 @@
 "use client";
 
+import { cx } from "@/utils";
 import Image from "next/image";
 import { ReactNode, useState } from "react";
+import { FaArrowCircleRight, FaArrowRight } from "react-icons/fa";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import Button from "../shared/Button";
 
 type PresenterType = {
   name: string;
@@ -14,28 +17,46 @@ type PresenterType = {
 
 const Presenter = ({ presenter }: { presenter: PresenterType }) => {
   const [showBio, setShowBio] = useState(false);
+  const [showBioBtn, setShowBioBtn] = useState(false);
+
+  const speakerTags = ["Convener", "Keynote Speaker"];
 
   const handleClick = () => {
     setShowBio(!showBio);
   };
 
+  const handleMouseEnter = () => {
+    setShowBioBtn(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowBioBtn(false);
+  };
+
   return (
     <>
       <div
-        className="w-full border border-[#f2f2f2] overflow-clip rounded-xl bg-light shadow-sm hover:bg-[#054128] hover:text-light"
+        className="w-full border relative border-[#f2f2f2] overflow-clip rounded-xl bg-light shadow-sm hover:bg-[#054128] hover:text-light cursor-pointer"
         onClick={handleClick}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <div className="relative flex overflow-clip pt-[80%]">
           <Image
             src={presenter.image}
             alt={presenter.name}
-            // placeholder="blur"
+            placeholder="blur"
             className="w-full rounded-t-xl object-cover hover:scale-95 transition-all duration-500 ease-in-out "
             fill
             sizes="max-width(767px) 100vw, 400px"
           />
           {presenter.tag && (
-            <p className="absolute left-0 top-0 bg-accent rounded-br text-light text-sm px-2 py-0.5">
+            <p
+              className={cx(
+                "absolute left-0 top-0 rounded-br text-light text-base px-2 py-0.5",
+                speakerTags.includes(presenter.tag) ? "bg-accent" : "bg-yellow"
+              )}
+            >
               {presenter.tag}
             </p>
           )}
@@ -44,10 +65,19 @@ const Presenter = ({ presenter }: { presenter: PresenterType }) => {
           <h4 className="text-base xs:text-xl font-semibold line-clamp-2">
             {presenter.name}
           </h4>
-          {presenter.title && (
+          {presenter.title && !showBioBtn && (
             <h5 className="text-xs line-clamp-2 xs:text-sm capitalize font-semibold mt-1">
               {presenter.title}
             </h5>
+          )}
+          {presenter?.bio && showBioBtn && (
+            <button
+              onClick={handleClick}
+              className="flex items-center transition-all duration-200 ease-in-out mt-3 bg-light text-dark text-sm px-4 py-1.5 rounded-md gap-3 w-max font-semibold"
+            >
+              Read bio
+              <FaArrowRight />
+            </button>
           )}
         </div>
       </div>

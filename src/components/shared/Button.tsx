@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({ href, text, className = "" }) => {
       target="_blank"
       rel="noopener noreferrer"
       className={cx(
-        "block w-max border-2 border-dark bg-dark font-semibold p-4 text-white transition-all duration-200 ease-in-out hover:bg-white hover:text-dark",
+        "block w-max border-2 transition-all duration-200 ease-in-out mt-8 mx-auto bg-winered border-winered text-light hover:text-winered hover:bg-light rounded-md px-6 py-3 text-lg font-semibold",
         className
       )}
     >
@@ -28,7 +28,8 @@ const Button: React.FC<ButtonProps> = ({ href, text, className = "" }) => {
       href={href}
       aria-label={text}
       className={cx(
-        "block w-max border-2 border-dark bg-dark font-semibold p-4 text-white transition-all duration-200 ease-in-out hover:bg-white hover:text-dark ",
+        "block w-max border-2 transition-all duration-200 ease-in-out mt-8 mx-auto bg-winered border-winered text-light hover:text-winered hover:bg-light rounded-md px-6 py-3 text-lg font-semibold",
+
         className
       )}
     >

@@ -55,7 +55,7 @@ const Hero = () => {
           <Button
             href="/#registration"
             text="GET YOUR TICKET"
-            className="mt-8 bg-winered border-winered hover:text-winered hover:!bg-transparent"
+            className="mt-8 bg-winered border-winered hover:text-winered hover:!bg-transparent ml-0"
           />
         </div>
       </div>

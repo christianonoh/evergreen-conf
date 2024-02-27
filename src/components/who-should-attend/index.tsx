@@ -38,7 +38,7 @@ const index = () => {
             <ul className="list-disc list-inside text-xl text-light lg:text-3xl font-semibold">
               {whoShouldAttend.map((item, index) => (
                 <li className="mb-4 flex items-center" key={index}>
-                  <div className="w-2 h-2 lg:w-4 lg:h-4 bg-yellow rounded-full mr-8" />
+                  <div className="p-2 bg-yellow rounded-full mr-8" />
                   {item}
                 </li>
               ))}

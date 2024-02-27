@@ -1,23 +1,54 @@
-import Image from "next/image";
+"use client";
+
 import Button from "../shared/Button";
 import RegistrationForm from "./RegistrationForm";
-import NikeLakeResort from "../../../public/nike-lake.webp";
 import { CurvedPatternIcon } from "../icons";
 import { siteMetadata } from "@/constants/siteMetaData";
-import { BsCalendarDateFill } from "react-icons/bs";
-import { FaLocationDot } from "react-icons/fa6";
+import { useState } from "react";
+import { feeCovers, feeDoesNotCover } from "@/constants";
 
-const index = () => {
+const RegistrationPage = () => {
+  const [registrationSuccess, setRegistrationSuccess] = useState(false);
   return (
-    <section className="relative" id="registration">
+    <section className="relative mb-32" id="registration">
       <CurvedPatternIcon
         fill="#fff"
         className="-rotate-180 absolute top-0 w-full"
       />
       <div className="bg-green/90 border-t-2 border-light">
-        <div className=" max-w-7xl  pt-44 pb-36 mx-auto px-5 md:px-10 flex flex-col md:flex-row items-center gap-12">
-          <div className="w-fit mx-auto md:w-4/12">
-            <span className=" items-center flex gap-2 mb-4 md:mb-8">
+        <div className=" max-w-7xl  pt-44 pb-36 mx-auto px-5 md:px-10 flex flex-col lg:flex-row items-center gap-12">
+          <div className="rounded-3xl bg-white p-5 z-20 py-10 sm:p-10 max-w-2xl mx-auto lg:w-4/12">
+            <h2 className="font-semibold text-2xl sm:text-2xl md:text-2xl mb-4 capitalize">
+              The investment for in-person participation is{" "}
+              <span className="text-yellow">N100,000</span>
+              &nbsp; per participant.
+            </h2>
+            <div className="mb-6">
+              <p className="font-semibold mb-2">This investment guarantees:</p>
+              <ul className="list-disc list-inside text-base text-dark">
+                {feeCovers.map((item, index) => (
+                  <li className="mb-2 flex items-center" key={index}>
+                    <div className="w-2 h-2 bg-yellow rounded-full mr-2" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="">
+              <p className="font-semibold mb-2">
+                This investment does not include:
+              </p>
+              <ul className="list-disc list-inside text-base text-dark">
+                {feeDoesNotCover.map((item, index) => (
+                  <li className="mb-2 flex items-center" key={index}>
+                    <div className="w-2 h-2 bg-yellow rounded-full mr-2" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* <span className=" items-center flex gap-2 mb-4 md:mb-8">
               <span className="bg-yellow text-light p-3 rounded-full text-xl">
                 <BsCalendarDateFill arial-label="Conference date icon" />
               </span>
@@ -32,7 +63,7 @@ const index = () => {
               </span>
               <address className="font-semibold text-base xs:text-xl lg:text-2xl text-light">
                 <a
-                  href="https://maps.app.goo.gl/NWWkJyfe4JFpWpgXA"
+                  href="https://maps.app.goo.gl/145xnK978jd2F9i89"
                   aria-label={siteMetadata.eventVenue}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -41,28 +72,37 @@ const index = () => {
                   {siteMetadata.eventVenue}
                 </a>
               </address>
-            </span>
+            </span> */}
           </div>
-          <div className="rounded-3xl bg-white p-5 z-20 py-10 sm:p-10 max-w-2xl  w-full md:w-8/12 mx-auto">
-            <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl mb-4 capitalize">
-              Registration fee is <span className="text-yellow">N100,000</span>
-              &nbsp; per participant.
-            </h2>
-            <p className="">
-              <b className="text-warning">Important Notice: </b>Your payment
-              includes coverage for essential conference components, namely{" "}
-              <b> conference materials, lunch, tea breaks, and certificates.</b>{" "}
-              Please note that{" "}
-              <span className="text-warning font-semibold">
-                {" "}
-                accommodation is not included in this payment.
-              </span>
-            </p>
-            <Button
-              href="https://pay.switchappgo.com/VvFASTh74YusP1sEbG"
-              text="GET YOUR TICKET"
-              className="mt-8 mx-auto !bg-winered !border-winered hover:!text-light"
-            />
+          <div className="  w-full lg:w-8/12 mx-auto">
+            <section className="">
+              <div className="max-w-7xl mx-auto w-full">
+                <h2 className="text-center text-light font-bold text-2xl sm:text-3xl md:text-4xl capitalize">
+                  {registrationSuccess
+                    ? "Registration Successful"
+                    : "Reserve a spot"}
+                </h2>
+                {!registrationSuccess && (
+                  <RegistrationForm
+                    setRegistrationSuccess={setRegistrationSuccess}
+                  />
+                )}
+
+                {registrationSuccess && (
+                  <div className="w-full max-w-2xl mx-auto rounded-3xl p-5 sm:p-10">
+                    <p className="text-center text-light mt-5">
+                      Thank you for registering. Please proceed to payment to
+                      complete your registration.
+                    </p>
+                    <Button
+                      href={siteMetadata.paymentLink}
+                      text="Proceed to Payment"
+                      className=""
+                    />
+                  </div>
+                )}
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -70,4 +110,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default RegistrationPage;
