@@ -9,6 +9,8 @@ import { feeCovers, feeDoesNotCover } from "@/constants";
 
 const RegistrationPage = () => {
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
+  const [paymentLink, setPaymentLink] = useState(siteMetadata.paymentLink.inPerson);
+  
   return (
     <section className="relative mb-32" id="registration">
       <CurvedPatternIcon
@@ -85,6 +87,7 @@ const RegistrationPage = () => {
                 {!registrationSuccess && (
                   <RegistrationForm
                     setRegistrationSuccess={setRegistrationSuccess}
+                    setPaymentLink={setPaymentLink}
                   />
                 )}
 
@@ -95,7 +98,7 @@ const RegistrationPage = () => {
                       complete your registration.
                     </p>
                     <Button
-                      href={siteMetadata.paymentLink}
+                      href={paymentLink}
                       text="Proceed to Payment"
                       className=""
                     />

@@ -3,18 +3,20 @@
 import { rolesOptions, workshopsOptions } from "@/constants";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useController, useForm } from "react-hook-form";
-import { z } from "zod";
 import InputFieldContainer from "./InputFieldContainer";
 import ReactSelectInput from "./ReactSelectInput";
 import { registrationSchema, registrationSchemaType } from "@/utils";
 import apiClient from "@/utils/apiClient";
+import { siteMetadata } from "@/constants/siteMetaData";
 
 interface RegistrationFormProps {
   setRegistrationSuccess: React.Dispatch<React.SetStateAction<boolean>>;
+  setPaymentLink: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const RegistrationForm = ({
   setRegistrationSuccess,
+  setPaymentLink
 }: RegistrationFormProps) => {
   const {
     register,
@@ -27,6 +29,12 @@ const RegistrationForm = ({
   });
 
   const onSubmit = async (data: registrationSchemaType) => {
+    // Set payment link depending on the attendance mode
+    if (data.attendanceMode === "In Person") {
+      setPaymentLink(siteMetadata.paymentLink.inPerson);
+    } else {
+      setPaymentLink(siteMetadata.paymentLink.virtual);
+    }
     // Handle the form data
     const formData = JSON.stringify({
       fields: {
@@ -36,7 +44,7 @@ const RegistrationForm = ({
     });
     console.log(formData);
     apiClient
-      .post("/applicants", formData, {
+      .post("/applicantstest", formData, {
         maxBodyLength: Infinity,
       })
       .then((response: any) => {

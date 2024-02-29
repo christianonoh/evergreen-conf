@@ -42,7 +42,10 @@ export const siteMetadata = {
   language: "en-us",
   theme: "system",
   siteUrl: siteUrl,
-  paymentLink: "https://pay.switchappgo.com/VvFASTh74YusP1sEbG",
+  paymentLink: {
+    inPerson: "https://pay.switchappgo.com/VvFASTh74YusP1sEbG",
+    virtual: "https://pay.switchappgo.com/AkDqcgrmxu2uAhQBF4",
+  },
   socials: {
     twitter: "https://twitter.com/SouthEastEduCon/",
     facebook: "https://web.facebook.com/southeasteducatorsconferences/",
