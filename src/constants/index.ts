@@ -14,6 +14,7 @@ import Odigboh from "/public/speakers/rhoda-odigboh.webp";
 import Ofobuike from "/public/speakers/chibueze-ofobuike.webp";
 import Ogundere from "/public/speakers/abimbola-ogundere.webp";
 import Israel from "/public/speakers/israel.webp";
+import Imole from "/public/speakers/imole.webp";
 import Angelina from "/public/speakers/angelina.webp";
 import {
   InnovationIcon,
@@ -249,6 +250,11 @@ export const speakers = [
     image: Osita,
   },
   {
+    name: "Prof. Pieter Verdegem",
+    title: "University of Westminser London",
+    image: Verdegem,
+  },
+  {
     name: "Dr Joy Isa",
     title: "College President ISA School of Education (ISED)",
     image: Isa,
@@ -270,11 +276,6 @@ export const speakers = [
     <p>Her professional affiliations, including the GTCE, NBA, APEN, and the Institute of Family Life System Engineering, complement her background as a lawyer and family life system coach.</p>
     <p>Bukola Adewuyi's unique philosophy, rooted in creativity, resourcefulness, and relentless hard work, elevates her as an exceptional strategist, trainer, consultant, and childcare expert, solidifying her status as a preeminent, transformative leader in education. She plays a pivotal role in the drive for school transformation in the education sector within Nigeria and across West Africa.</p>
   `,
-  },
-  {
-    name: "Prof. Pieter Verdegem",
-    title: "University of Westminser London",
-    image: Verdegem,
   },
   {
     name: "Lady Uju Dike",
@@ -320,6 +321,19 @@ export const speakers = [
     <p>Rhoda serves as the Head of Africa Programs at Kizazi - a global nonprofit supporting local nonprofits to design, implement, and codify breakthrough school programs in partnerships with their families, communities, and governments across Asia and Africa. Today, along with our local NGO partners, we are working on redesign projects with government systems directly impacting over 35,000+ children and over 2 million children through system-adoption across India, Sierra Leone, and Armenia.</p>
     <p>Before joining Kizazi, Rhoda served as Regional Director, Academics at NewGlobe overseeing academic programming for government partnerships and community school programs. Her experience includes launching and leading large-scale programs.</p>
     <p>She is the Vice President, Professional Association of Curriculum Theorists in Nigeria (PACTPiN); and serves on the board of the Let Cerebral Palsy Kids Learn Foundation & AIFA Reading Society. Rhoda co-founded The Learning Craft in 2012, a social enterprise focused on supporting the public and private sector in achieving inclusive and equitable whole school education systems towards nation building.</p>
+  `,
+  },
+  {
+    name: "Elfrida Diete-Spiff Omole",
+    title: "Executive Director, Bere-Mont Group",
+    image: Imole,
+    bio: `
+    <p>A ‘Value Builder’ committed to developing human capacity and ensuring people identify and fulfil their purpose in life.</p>
+    <p>Elfrida Diete-Spiff Omole is the Executive Director of Bere-Mont Group. Bere-Mont is a leading provider of educational and healthcare services in Nigeria. The Group comprises two schools: Bereton Montessori Early Years, Primary and Secondary School (Day School) founded in 1978 and Charles Dale Memorial International School (Boarding Secondary School) which she co-founded in 2006; and a hospital – Daily Spring Hospital.</p>
+    <p>She had her early career in the banking sector at United Bank for Africa Plc (UBA) between 1998 and 2000 when she decided to further her education. With her passion for innovation and strong entrepreneurial spirit, she joined Bere-Mont Group as an Executive Management staff in 2002.</p>
+    <p>Elfrida Diete-Spiff Omole holds a first degree in Banking and Finance with Second Class Upper honours from the University of Port Harcourt and a Master’s degree in Information Technology from Queen Mary, University of London. She is an alumna of the Stanford Seed Transformation Programme. Stanford Seed is an initiative of the Stanford Graduate School of Business.</p>
+    <p>She is a member of the Stanford Seed Transformation Network and an associate member of Women in Management, Business and Public Service (WIMBIZ).</p>
+    <p>She loves coaching and mentoring young people, reading, and traveling. She is happily married.</p>
   `,
   },
   {

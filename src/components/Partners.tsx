@@ -5,7 +5,7 @@ import Educare from "/public/partners/educare.png";
 import Image from "next/image";
 
 const Partners = () => {
-  const partners = [Wowbii, EnuguMinstry, Evergreen, Educare];
+  const partners = [Wowbii, Evergreen, Educare];
   return (
     <section
       id="partners"
