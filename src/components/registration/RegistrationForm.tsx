@@ -44,7 +44,7 @@ const RegistrationForm = ({
     });
     console.log(formData);
     apiClient
-      .post("/applicantstest", formData, {
+      .post("/applicants", formData, {
         maxBodyLength: Infinity,
       })
       .then((response: any) => {
