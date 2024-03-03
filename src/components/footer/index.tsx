@@ -47,7 +47,7 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto flex flex-col px-5 gap-8 md:px-10 md:flex-row justify-between text-light/70 text-sm items-center mt-16">
+      <div className="max-w-7xl mx-auto flex flex-col px-5 gap-8 md:px-10 md:flex-row justify-between border-t pt-6 border-light/50 text-light/70 text-sm items-center mt-16">
         <p>© 2024 Education Conference. All rights reserved.</p>
         <p>
           Developed by&nbsp;
