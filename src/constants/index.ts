@@ -42,184 +42,152 @@ export type EventDay = {
 
 export type EventProgram = EventDay[];
 
+
+
 export const eventProgram: EventProgram = [
   {
     day: "Day 1",
     schedule: [
-      { time: "8:30 AM - 9:00 AM", event: "Registration and Welcome" },
-      {
-        time: "9:00 AM – 9:05 AM",
-        event: "Opening Prayer",
-        details: "",
-      },
+      { time: "7:30 AM - 8:30 AM", event: "Registration and Welcome" },
+      { time: "8:30 AM - 9:00 AM", event: "Opening Prayer", details: "" },
       {
         time: "9:05 AM - 9:15 AM",
         event: "Opening Address by Barr. Mrs. Doris Chinedu-Okoro",
         details: "",
       },
       {
-        time: "9:15 AM – 9:35 AM",
+        time: "9:15 AM - 9:35 AM",
         event: "Address by Prof. Ndubueze Mbah",
         details:
           "Special address by the Honourable Commissioner for Education, Enugu State.",
       },
       {
-        time: "9:35 AM",
+        time: "9:35 AM - 10:15 AM",
         event: "Keynote Address by Hon. Osita Chidoka OFR, NPOM",
         details:
           "Honourable Osita Chidoka OFR, NPOM delivers a keynote address. Topic recommendation: Prof. Petier.",
       },
       {
-        time: "10:00 AM - 10:30 AM",
+        time: "10:15 AM - 11:00 AM",
         event:
           "Artificial Intelligence and Society: Disruptor or Destroyer by Professor Pieter Verdegem",
         details:
           "Professor Pieter Verdegem from the University of Westminster, London, explores the implications of artificial intelligence on society.",
       },
       {
-        time: "10:55 AM – 11:05 AM",
+        time: "11:00 AM - 11:10 AM",
         event: "School Performance",
         details: "Showcasing school achievements and performance.",
       },
       {
-        time: "11:05 AM – 11:35 AM",
+        time: "11:10 AM - 11:45 AM",
         event: "Tea Break",
         details: "Refreshment break for attendees.",
       },
       {
-        time: "11:40 AM – 12:25 PM",
+        time: "11:40 AM - 12:25 PM",
         event: "Global Citizenship by Angelina Ikeakor",
         details: "Insights on global citizenship by Angelina Ikeakor.",
       },
       {
-        time: "12:25 PM – 12:35 PM",
-        event: "Sponsors Session: Educare",
-        details: "Educare presents their contributions and initiatives.",
+        time: "12:25 PM - 12:45 PM",
+        event: "Future of Ai by Educare",
+        details: "Presentation by Educare on the future of AI in education.",
       },
       {
-        time: "12:35 PM – 12:45 PM",
-        event: "Sponsors Session: Wowbii",
-        details: "Wowbii showcases their contributions and innovations.",
+        time: "12:45 PM - 1:15 PM",
+        event: "Sponsors Presentations",
+        details: "",
       },
+      { time: "1:15 PM - 1:40 PM", event: "Lunch Break", details: "" },
       {
-        time: "1:20 PM – 1:40 PM",
-        event: "Lunch Break",
-        details: "Time for lunch and networking.",
-      },
-      {
-        time: "1:40 PM – 2:40 PM",
-        event: "Breakout Sessions",
+        time: "1:40 PM - 2:40 PM",
+        event: "Breakout session",
         details:
           "<b>&#8226; </b> AI Tools for Lesson Content by Ebenezer Odetola. <br /> <b>&#8226; </b> Purpose-Driven Leadership by Rhoda Odigboh",
       },
       {
-        time: "2:40 PM – 3:30 PM",
-        event: "Panel: Future Trends in Education",
+        time: "2:40 PM - 3:30 PM",
+        event: "Panel Session:  Future Trends in Education",
         details:
-          "Panel discussion on future trends with Uju (British springs), Evergreen, Joy Isa, Abimbola.",
+          "",
       },
       {
-        time: "3:30 PM",
-        event: "Closing Address",
-        details: "Concluding remarks and acknowledgments.",
+        time: "3:30 PM - 4:00 PM",
+        event: "Ai and Inequalities - A Nigerian Perspective by John Njorteah",
+        details: "",
       },
+      { time: "4:00 PM", event: "Closing Address", details: "" },
     ],
   },
   {
     day: "Day 2",
     schedule: [
       {
-        time: "9:00 AM – 9:05 AM",
-        event: "Opening Prayer",
-        details: "A moment of prayer to commence the day.",
+          time: "7:30 AM - 8:30 AM",
+          event: "Registration"
       },
       {
-        time: "9:05 AM",
-        event: "Special Guest Address by Dr. Chibueze Ofobuike",
-        details: "Dr. Chibueze Ofobuike delivers a special address.",
+          time: "8:30 AM - 9:00 AM",
+          event: "Opening Prayer"
       },
       {
-        time: "9:15 AM",
-        event: "General Session – Best Practices in 21st Century Education",
-        details: "Insights shared by Mr. Eitayo Rotimi.",
+          time: "9:00 AM - 9:30 AM",
+          event: "Special Guest Address by Dr. Chibueze Ofobuike"
       },
       {
-        time: "10:00 AM – 10:45 AM",
-        event:
-          "Positive Discipline for Transformation and Impact in Education by Joy Isa",
-        details:
-          "Joy Isa discusses using positive discipline as a tool for transformation and impact in education.",
+          time: "9:35 AM - 10:20 AM",
+          event: "General Session – Best Practices in 21st Century Education"
       },
       {
-        time: "11:20 AM – 11:50 AM",
-        event: "Tea Break",
-        details: "A break for tea and refreshments.",
+          time: "10:20 AM - 11:00 AM",
+          event: "Positive Discipline for Transformation and Impact in Education by Joy Isa"
       },
       {
-        time: "11:50 AM",
-        event: "Digital Safeguarding by Ify Obidi Essien",
-        details: "Presentation on digital safeguarding by Ify Obidi Essien.",
+          time: "11:00 AM - 11:25 AM",
+          event: "Tea Break"
       },
       {
-        time: "12:45 PM – 1:30 PM",
-        event:
-          "Leading a Learning Environment for Transformational Impact by Dr. Abimbola Ogundere",
-        details:
-          "Dr. Abimbola Ogundere shares insights on leading a learning environment for transformational impact.",
+          time: "11:30 AM - 12:10 PM",
+          event: "Integrating the 4C's in Education"
       },
       {
-        time: "10:50 AM – 11:10 AM",
-        event: "Session by Eben",
-        details: "Session conducted by Eben.",
+          time: "12:10 PM - 1:00 PM",
+          event: "Leading a Learning Environment for Transformational Impact by Dr. Abimbola Ogundere"
       },
       {
-        time: "11:10 AM – 11:20 AM",
-        event: "Entertainment",
-        details: "A brief entertainment segment.",
+          time: "1:00 PM - 1:15 PM",
+          event: "School Performance"
       },
       {
-        time: "1:30 PM – 2:00 PM",
-        event: "Lunch Break",
-        details: "Time for lunch and networking.",
+          time: "1:15 PM - 1:45 PM",
+          event: "Lunch Break"
       },
       {
-        time: "2:05 PM – 2:10 PM",
-        event: "Sponsor Session - Success Tab",
-        details: "Presentation by Success Tab, one of the sponsors.",
+          time: "1:45 PM - 2:10 PM",
+          event: "Sponsors Presentations"
       },
       {
-        time: "2:10 PM – 2:20 PM",
-        event: "Sponsor Session - Educare",
-        details: "Presentation by Educare, one of the sponsors.",
+          time: "2:10 PM - 3:00 PM",
+          event: "Breakout Session"
       },
       {
-        time: "2:20 PM – 2:25 PM",
-        event: "Sponsor Session - Wowbii",
-        details: "Presentation by Wowbii, one of the sponsors.",
+          time: "3:00 PM - 3:30 PM",
+          event: "Panel Session: Growing A Successful School"
       },
       {
-        time: "2:25 PM – 2:30 PM",
-        event: "Sponsor Session - UBA",
-        details: "Presentation by UBA, one of the sponsors.",
+          time: "3:30 PM - 4:00 PM",
+          event: "Debate - Flipped Classroom in 21st Century Learning"
       },
       {
-        time: "2:30 PM - ?? PM",
-        event: "Debate - Flipped Classroom in 21st Century Learning",
-        details:
-          "Debate on the effectiveness of the flipped classroom model. Participants: Onyii Nwandu, Uche Osassah, Phil.",
+          time: "4:00 PM",
+          event: "Closing Prayer, Remarks and Acknowledgments"
       },
       {
-        time: "?? PM – ?? PM",
-        event: "Closing Prayer, Remarks and Acknowledgments",
-        details:
-          "Express gratitude to participants, speakers, and sponsors, and encourage ongoing collaboration for impactful education.",
-      },
-      {
-        time: "?? PM – ?? PM",
-        event: "Gala Night / Closing Ceremony",
-        details: "Closing event for the conference.",
-      },
-    ],
+          time: "6:30 PM - 9:30 PM",
+          event: "Gala Night / Closing Ceremony"
+      }
+  ],
   },
 ];
 
