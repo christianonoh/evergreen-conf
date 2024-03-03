@@ -54,31 +54,6 @@ const RegistrationPage = () => {
               </ul>
             </div>
 
-            {/* <span className=" items-center flex gap-2 mb-4 md:mb-8">
-              <span className="bg-yellow text-light p-3 rounded-full text-xl">
-                <BsCalendarDateFill arial-label="Conference date icon" />
-              </span>
-              <span className="text-base xs:text-xl lg:text-2xl font-semibold italic text-light">
-                <time dateTime="2024-04-18">18th</time>&nbsp;and&nbsp;
-                <time dateTime="2024-04-18">19th</time>&nbsp;April, 2024.
-              </span>
-            </span>
-            <span className="items-center flex gap-2">
-              <span className="bg-yellow text-light p-3 rounded-full text-xl">
-                <FaLocationDot arial-label="Conference venue icon" />
-              </span>
-              <address className="font-semibold text-base xs:text-xl lg:text-2xl text-light">
-                <a
-                  href="https://maps.app.goo.gl/145xnK978jd2F9i89"
-                  aria-label={siteMetadata.eventVenue}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Conference Venue Details"
-                >
-                  {siteMetadata.eventVenue}
-                </a>
-              </address>
-            </span> */}
           </div>
           <div className="  w-full lg:w-8/12 mx-auto">
             <section className="">
