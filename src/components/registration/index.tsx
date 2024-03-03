@@ -9,8 +9,10 @@ import { feeCovers, feeDoesNotCover } from "@/constants";
 
 const RegistrationPage = () => {
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
-  const [paymentLink, setPaymentLink] = useState(siteMetadata.paymentLink.inPerson);
-  
+  const [paymentLink, setPaymentLink] = useState(
+    siteMetadata.paymentLink.inPerson
+  );
+
   return (
     <section className="relative mb-32" id="registration">
       <CurvedPatternIcon
@@ -21,9 +23,11 @@ const RegistrationPage = () => {
         <div className=" max-w-7xl  pt-44 pb-36 mx-auto px-5 md:px-10 flex flex-col lg:flex-row items-center gap-12">
           <div className="rounded-3xl bg-white p-5 z-20 py-10 sm:p-10 max-w-2xl mx-auto lg:w-4/12">
             <h2 className="font-semibold text-2xl sm:text-2xl md:text-2xl mb-4 capitalize">
-              The investment for in-person participation is{" "}
+              The investment for in-person participation is &nbsp;
               <span className="text-yellow">N100,000</span>
-              &nbsp; per participant.
+              &nbsp;and &nbsp;
+              <span className="text-yellow">N50,000</span> for virtual
+              participation per participant.
             </h2>
             <div className="mb-6">
               <p className="font-semibold mb-2">This investment guarantees:</p>
